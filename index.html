@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- O que essa parte faz? -->
+        <meta charset="UTF-8">
+
+        <!-- O que essa parte faz? -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- O que essa parte faz? -->
+        <title>Yanomafk</title>
+
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            #sprite {
+            width: 1400px;
+            height: 1500px;
+            background-image: url('ambulanciaa.jpg');
+            background-size: 600px 700px; /* largura total do spritesheet */
+            animation: animateSprite 1.0s steps(4) infinite; /* 5 frames no spritesheet */
+            }
+
+            @keyframes animateSprite {
+            from { background-position: 600 500; }
+            to { background-position: 600px 0; } /* desloca o spritesheet horizontalmente */
+            }
+        </style>
+        
+        <!-- O que essa parte faz? -->
+        <script src="phaser.js"></script>
+    </head>
+
+
+    <body>
+        
+        <!-- O que essa parte faz? -->
+        <script src="jogo_3.js"></script>
+    </body>
+
+</html>
